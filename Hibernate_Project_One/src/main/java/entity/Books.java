@@ -39,4 +39,15 @@ public class Books {
     @ManyToOne
     @JoinColumn(name = "id")
     private Student student;
+
+    @Override
+    public String toString() {
+        return "Books{" +
+                "id_book=" + id_book +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", pages=" + pages +
+                ", date_of_release=" + date_of_release +
+                '}';
+    }
 }

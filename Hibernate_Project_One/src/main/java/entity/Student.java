@@ -28,6 +28,7 @@ public class Student {
     private Date date_of_borrow;
 
     @OneToMany(mappedBy = "student")
+//    @ToString.Exclude
     private List<Books> booksList = new ArrayList<>();
 
 }
